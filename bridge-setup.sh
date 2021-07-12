@@ -23,7 +23,7 @@ sudo ip link set dev net2bowser master br0 &> /dev/null
 # make all connections UP
 sudo ip link set dev br0 up &> /dev/null
 sudo ip netns exec peach ip link set dev peach2net up &> /dev/null
-sudo ip netns exec peach ip link set dev lo upl &> /dev/null
+sudo ip netns exec peach ip link set dev lo up &> /dev/null
 sudo ip netns exec bowser ip link set dev bowser2net up &> /dev/null
 sudo ip netns exec bowser ip link set dev lo up &> /dev/null
 
